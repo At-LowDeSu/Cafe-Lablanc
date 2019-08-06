@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap');
+
+:root {
+  --main-bg-color: #b29c7c;
+  --header-bg-color: #f7d9ad;
+  --primary-color: #3f322a;
+  --accent-color: #91806600;
+  /* #856a5d */
+
+  --main-font-family: 'Open Sans', Helvetica, sans-serif;
+  --header-font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  --header-txt-color: var(#333);
+  --border-color: black;
+  --main-text-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font-family);
+  color: var(--header-txt-color);
+}
+
+a {
+  text-decoration: none;
+}
+li,
+p,
+a {
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+}
+
+body {
+  margin: 1rem;
+  background-color: var(--main-bg-color);
+}
+
+.nav-container {
+  background-color: var(--header-bg-color);
+  color: var(--header-txt-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px var(--border-color) solid;
+}
+
+.nav-container > div {
+  align-content: center;
+}
+
+.nav {
+  /* flex: 1; */
+  flex-basis: 30%;
+}
+
+.main-nav {
+  /* flex: 1; */
+  flex-basis: 60%;
+  align-content: center;
+  text-align: center;
+}
+
+.main-nav-container {
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+.item {
+  flex: 1;
+  /* border: 1px var(--border-color) solid;
+  margin: 0px; */
+  padding: 1rem;
+}
+
+.item:hover {
+  background-color: var(--accent-color);
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+}
+
+p > span {
+  color: red;
+}
+.container {
+  border: 1px black solid;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--header-bg-color);
+  display: flex;
+}
+
+.main-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.right-container {
+  /* flex: 1; */
+  order: 3;
+  flex-basis: 30%;
+  padding: 1rem;
+  border: 1px black solid;
+  margin: 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.right-container > h1,
+h2,
+h3 {
+  padding: 1rem;
+}
+
+.product-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product {
+  flex: 1;
+}
+.left-container {
+  flex-basis: 30%;
+  border: 1px black solid;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 30%;
+  order: 1;
+}
+
+.center-container {
+  /* flex: 3; */
+  order: 2;
+  flex-basis: 60%;
+}
+footer {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.img-border {
+  border: 1px black solid;
+}
